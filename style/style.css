@@ -1,0 +1,285 @@
+/* Alexandre HULSKEN - Zoe CANOEN */
+/* REGLES GENERALES */
+body, html, .main-content {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body, html {
+	height: 100%;
+}
+
+h3 {
+	margin: 0;
+}
+
+a {
+	color: black;
+}
+/**/
+
+/* HAUT DE PAGE */
+header {
+	background-image: linear-gradient(white 0.5%,lightgrey 80%);
+	width: 100%;
+	height: 15%;
+}
+
+header img {
+	position: absolute;
+	height: 10%;
+	top:0;
+	left: 10%;
+}
+
+header h1 {
+	font-size: 40px;
+	margin: 0;
+	height: 75%;
+	line-height: 75px;
+	width: 100%;
+	text-align: center;
+}
+
+header h3 {
+	font-size: 120%;
+	background-color: darkred;
+	color: white;
+	text-align : center;
+	width: 80%;
+	margin: auto;
+	height: 25%;
+	border-radius: 5px 5px 0 0;
+}
+/**/
+
+/* BULLE EN GENERALE */
+.main-content {
+	z-index: 1;
+	margin-top: 2%;
+	margin-left: 69.5%;
+	position: absolute;
+  height: 60%;
+	width: 30%;
+	background-color: rgba(200,200,200,0.75);
+	border: solid 7px rgba(255,255,255,0);
+	border-radius: 15px 0 0 15px;
+	border-right: none;
+}
+
+.main-content>.Displayed {
+	height: 92%;
+}
+
+#selectedFields, form, .stations {
+	overflow: auto;
+	height: 100%;
+	width: 100%;
+}
+
+.Displayed>* {
+	display: none;
+}
+
+.Displayed>.categorieSelected {
+	display: inherit;
+}
+/**/
+
+/* MENU BULLE */
+#buttons {
+	display: table;
+	width: 100%;
+	height: 8%;
+}
+
+#buttons div {
+	display: table-cell;
+	height: 100%;
+}
+
+#buttons button {
+	width: 98%;
+	height: 100%;
+	border-radius: 15px;
+	box-shadow: 0 0 4px 1px black;
+	font-size: 95%;
+	background-color: darkred;
+	color: lightgrey;
+}
+/**/
+
+/* STATION SELECTIONNEE */
+#selectedFields h3 {
+	margin: 5% 0;
+	text-align: center;
+	font-size: 140%;
+}
+
+#selectedFields hr {
+	width: 95%;
+	margin-bottom: 1em;
+}
+
+#selectedFields>div:nth-of-type(1) {
+	width 100%;
+}
+
+#selectedFields h5 {
+	margin: 0;
+	font-size: 90%;
+}
+
+#selectedFields h3 em {
+	border: none;
+	font-size: 60%;
+}
+
+#selectedFields p {
+	font-size: 120%;
+}
+
+#selectedFields em {
+	padding: 0 1%;
+	border: solid 2px;
+	border-radius: 50%;
+	border-style: ridge;
+}
+/**/
+
+/* ENSEMBLE DES STATIONS (TABLE) */
+tr.selected {
+	border: outset;
+	background-color: rgba(139,0,0,0.8);
+	color: lightgrey;
+	box-shadow: 0 0 4px 4px black;
+}
+
+tr:hover {
+	background-color: rgba(100,100,100,0.8);
+}
+
+td, th{
+	margin: 0;
+	border: solid 1px;
+}
+
+th {
+	background-color: rgba(0,0,128,0.75);
+	color: lightgrey;
+	border-color: black;
+}
+
+td.warning, td.dispo, td.empty {
+	color: black;
+}
+
+td.warning {
+	background-color: rgba(255,165,0,0.75);
+}
+
+td.dispo {
+	background-color: rgba(67,255,108,0.75);
+}
+
+td.empty {
+	background-color: rgba(255,85,67,0.75);
+}
+/**/
+
+/* FORMULAIRE */
+form {
+	width: 100%;
+	margin-top: 4%;
+	text-align: center;
+}
+
+form hr {
+	width: 85%;
+}
+
+form input[type=number] {
+	width: 10%;
+}
+
+form select {
+  width: 100%;
+	margin: 1% 0;
+}
+
+form input, select {
+	text-align: center;
+	padding: 0.7%;
+	color: darkred;
+	background-color: rgba(255,255,255,0.7);
+}
+
+form button {
+	margin: 4%;
+}
+/**/
+
+/* MESSAGES D'ERREURS */
+.ErrorMessage {
+  width: 90%;
+	margin: auto;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	text-align: center;
+	border: solid;
+	border-width: 2px;
+	padding: 1.3%;
+	color: darkred;
+	background-color: rgba(255,255,255,0.7);
+}
+/**/
+
+/* CARTE */
+#carte {
+	z-index: 0;
+	width: 100%;
+	height: 70%;
+}
+
+.warning {
+	background-color: orange;
+}
+
+.dispo {
+	background-color: #43ff6c;
+}
+
+.empty {
+	background-color: #ff5543;
+}
+/**/
+
+/* PIED DE PAGE */
+footer {
+	background-image: linear-gradient(lightgrey, white);
+	width: 100%;
+	height: 15%;
+}
+
+footer>* {
+	display: inline-block;
+	width: 33%;
+	text-align: center;
+}
+
+#annexes li, #contact li {
+	width: 100%;
+	text-align: center;
+	list-style-type: none;
+	font-size: 90%;
+}
+
+#lille1 {
+	text-align: center;
+}
+
+footer img {
+	width: 60%;
+}
+/**/
