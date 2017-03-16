@@ -101,9 +101,9 @@ On y trouve notamment la gestion des boutons de navigation, les évènements de 
 
 Ce dossier ne contient qu'un fichier, `style.css`, qui est le fichier contenant l'ensemble des règles de styles de notre fichier.
 
-### <a name="plusEtMoins">Les fonctionnalitées et les manques</a>
+### <a name="plusEtMoins">3. Les fonctionnalitées et les manques</a>
 
-#### <a name="moins">Les manques de notre projet</a>
+#### <a name="moins">3.1. Les manques de notre projet</a>
 
 Notre projet comporte certains manques, parmis ceux-ci, nous y  trouverons notamment:
 - L'absence d'un filtre de recherche pour retrouver une station en particulier
@@ -114,7 +114,7 @@ Notre projet comporte certains manques, parmis ceux-ci, nous y  trouverons notam
 
 Mais pour quelques uns de ces point nous avons fait des choix. Pour les infromations supplémentaires grâce au survole, nous avons implémenter la même fonctionnalité mais sur un clique, et pour le filtre nous avons fait le choix de ne pas l'implémenter de la manière dont nous avions pensé, car avec notre méthode cela pouvait gêner l'ergonomie pour un utilisateur lambda puisqu'il devait connaitre le nom exacte de la station qu'il souhaitait et ne pas faire de fautes de frappes ou d'orthographe en entrant rigoureusement son nom puisque sinon après l'envoie du formulaire elle n'allait pas apparaitre. Finalement pour le point de recherche par point géographique, nous avons choisi de ne pas l'implémenter puisque nous voulions laisser l'utilisateur entrer une adresse et une distance par rapport à celle-ci pour obtenir les stations dans ces environs, mais nous n'avons pas réussit à récupérer les coordonnées géographique de cette adresse. Du coup nous aurions pu faire la même fonctionnalité mais avec une entrée de coordonnées par l'utilisateur mais notre choix c'est porté sur le fait de ne pas l'implémenter par simple soucis d'ergonomie d'utilisation puisqu'une personne lambda ne connait pas forcement les coordonnées géographique de la position qu'elle souhaite mais plutôt l'adresse de cet endroit.
 
-#### <a name="plus">Nos différentes fonctionnalités</a>
+#### <a name="plus">3.2. Nos différentes fonctionnalités</a>
 
 Notre projet possède différentes fonctionnalités différentes dont nous avons parlé très rapidement en présentant chacun de nos différents fichiers. Celles dont nous voulons particulierement mettre l'accent sont:
 - La gestion de changement de catégorie dans la "bulle de contenue" entre autre, il s'agit de la partie de la page se trouvant au dessus de la carte et qui contient la petite aide de fonctionnement au départ, la table de l'ensemble des stations, le formulaire et la station sélectionnée
@@ -126,7 +126,7 @@ Notre projet possède différentes fonctionnalités différentes dont nous avons
 - Le fait que toute l'application se porte sur une seule page et n'utilise aucune autre page web, entre autre, l'utilisateur restera toujours sur une même page ou sera redirigé sur cette même page mais avec des valeurs internes différentes
 - La carte est recentré sur le marqueur de la station sélectionnée dans la table de l'ensemble des stations
 
-### <a name="test">Quelques tests pouvant être effectués</a>
+### <a name="test">4. Quelques tests pouvant être effectués</a>
 
 Pour tester l'ensemble de nos fonctionnalitées, cela risque d'être difficile puisqu'il faudrait en enlevé certaines dans certains moments puisque pour quelques unes, elle sont cachées par d'autre (par exemple la vérification des valeurs du formulaire, elle est faite du coté serveur comme du coté client du coup celle du côté serveur reste caché à première vu mais sert de sécurité).
 Pour votre test de bêta-testeur, nous allons supposer que vous utiliser votre navigateur favorie (tel que firefox) dans la taille que vous souhaitez (tel que le pleine écran) sans désactiver aucune fonctionnalité (tel que désactiver l'execution des scripts *javascript*).
