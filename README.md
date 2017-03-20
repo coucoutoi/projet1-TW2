@@ -63,26 +63,6 @@ $ cd ../images; ls
 licenses   credit_card.png   index.png
 ```
 
-Pour plus de lisibilité, nous pouvons aussi ça schématiser cette arborescence de cette manière:
-```mermaid
-graph TD
- PROJET --> index.php;
- PROJET --> STYLE;
- STYLE --> STYLE.CSS;
- PROJET --> lib;
- lib --> construct_html.php;
- lib --> lectureArgument.php;
- PROJET --> scripts;
- scripts --> CheckForm.js;
- scripts --> script.js;
- scripts --> VliveImage.js;
- PROJET --> images;
- images --> licenses;
- images --> credit_card.png;
- images --> index.png;
- licenses --> credit_card.txt;
-```
-
 Comme vous pouvez le voir ci-dessus, le dossier *./style* comprend le fichier de style, le dossier *./lib* lui, l'ensemble de nos fichiers `PHP` qui contiennent nos fonctions utiles, le dossier *./scripts* contient nos fichiers `JavaScript`, et notre dossier *./images*, nos images ainsi qu'un dossier *./licenses* contenant leur licenses.
 
 **Note :** Les codes donnés ici sont considérés comme étant dans le serveur webtp. Si vous les effectez par vous même, vous trouverez des fichiers supplémentaires sans lien direct avec notre application, tel que ce rapport.
